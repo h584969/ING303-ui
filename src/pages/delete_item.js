@@ -1,9 +1,11 @@
+import HeaderButton from "../components/header-button";
 import MenuPageSkeleton from "../components/skeletons/menu_page_skeleton";
+import {ReactComponent as Return  } from "../assets/arrow_back.svg";
 import PageObject from "../util/page_object";
 import EditItem from "./edit_item";
 import ItemMenu from "./item_menu";
 
-const DeleteItemContent = ({setPage = () => console.warn("'setPage' not provided"), item = ""} = {}) => {
+const DeleteItemContent = ({setPage = () => {}, item = ""} = {}) => {
     return (
         <div className="delete_item_container">
             <h4>Er du sikker på at du ønsker å slette</h4>
@@ -16,9 +18,18 @@ const DeleteItemContent = ({setPage = () => console.warn("'setPage' not provided
     );
 };
 
-const DeleteItem = ({setPage = () => console.warn("'setPage' not provided")} = {}) => {
+const DeleteItem = ({setPage = () => {}, item=""} = {}) => {
     return (
-        <MenuPageSkeleton Content={() => <DeleteItemContent setPage={setPage} item="T Bone"/>} header_button_logic={() => setPage(new PageObject(() => <EditItem setPage={setPage}/>))}/>
+        <MenuPageSkeleton
+            header_buttons={[
+                <HeaderButton 
+                    Icon={Return}
+                    key={0}
+                    onClick={() => setPage(new PageObject(() => <EditItem setPage={setPage}/>))}
+                />
+            ]}
+            Content={() => <DeleteItemContent setPage={setPage} item={item}/>}
+        />
     );
 }
 

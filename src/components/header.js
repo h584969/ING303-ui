@@ -3,11 +3,13 @@ import HeaderButton from "./header-button";
 import Logo from "./logo";
 
 
-const Header = ({button_icon = Return, button_logic = () => {}} = {}) => {
+const Header = ({buttons = []} = {}) => {
     return (
         <div className="app-header">
             <Logo />
-            <HeaderButton Icon={button_icon} onClick={button_logic}/>
+            <div className="app-header-button-group">
+                {buttons}
+            </div>
         </div>
     );
 }

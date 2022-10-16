@@ -1,6 +1,5 @@
 const HeaderButton = ({Icon=null, onClick = () => {}} = {}) => {
-    var icon =  <Icon className="app-header-button" onClick={onClick} />;
-    return icon;
+    return <Icon className="app-header-button" onClick={onClick} />;
 }
 
 export default HeaderButton;
