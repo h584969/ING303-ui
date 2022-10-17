@@ -3,6 +3,8 @@
   --background-secondary: #273746;
   --text-logo: #FF893B;
   --button-secondary: #729CA2;
+  --button-secondary-darker: #5c7e83;
+  --button-secondary-darkest: #394e52;
   --icon-danger: #DE4343;
 
   --item-background: #C4DCDF;
@@ -353,10 +355,71 @@
   margin-left: auto;
   margin-right: auto;
   justify-self: center;
-  width: max-content;
-  height: 30px;
   background-color: #DE4343;
+}
+
+.cut_parameter_input{
+  width: 100%;
+}
+
+.cut_parameter_input>input{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Inter' !important;
+  color: black;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+}
+
+.cut_parameter_input>button{
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+button {
+  margin-left: 5%;
+  margin-right: 5%;
+  min-width: fit-content;
+  width: 13%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-secondary);
   color: white;
   font-family: 'Inter' !important;
   font-style: italic;
+  font-size: 2rem;
+}
+
+button:hover{
+  background-color: var(--button-secondary-darker);
+}
+
+button:active{
+  background-color: var(--button-secondary-darkest);
+}
+
+.parameter_input{
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  width: max-content;
+  height: 30px;
+  background-color: var(--item-background);
+  color: white;
+  font-family: 'Inter' !important;
+  font-style: italic;
+}
+
+.loader_container{
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }

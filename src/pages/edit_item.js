@@ -32,7 +32,7 @@ const EditItemContent = ({
                     <label>Pris per kg</label>
                 </div>
                 <div className="item_viewer_input_row">
-                    <input type={"number"} value={price} onChange={(e) => setPrice(e.target.value)}/>
+                    <input type={"text"} inputMode={"decimal"} value={price} onChange={(e) => setPrice(e.target.value)}/>
                 </div>
                 <div className="item_viewer_input_row item_viewer_input_row_left">
                     <SaveIcon className="item_viewer_input_icon icon_secondary" onClick={() => setPage(new PageObject(() => <ItemMenu setPage={setPage}/>))}/>

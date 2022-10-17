@@ -21,7 +21,7 @@ const WaitForItem = ({setPage} = {}) => {
         Extra={() => <button 
             className="cheat_button"
             onClick={() => setPage(new PageObject(() => <ItemSelection setPage={setPage}/>))}
-        >{"Trykk for å gå videre"}</button>}
+        >{"Trykk for å \"legge på\" vare"}</button>}
     />
 };
 

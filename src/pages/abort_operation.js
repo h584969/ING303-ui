@@ -11,7 +11,7 @@ const AbortOperation = ({setPage} = {}) =>{
             Extra={() => <button 
                 className="cheat_button"
                 onClick={() => setPage(new PageObject(() => <WaitForItem setPage={setPage}/>))}>
-                    Trykk for å gå videre
+                    Trykk for å "fjerne"
                 </button>
             }/>
     );
