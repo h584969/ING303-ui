@@ -1,9 +1,8 @@
+import logoImg from "../assets/Cura-opus-transparent.png";
 const Logo = () => {
     return(
-        <svg viewBox="0 0 387 145" className="app-logo-container">
-            <text x={0} y={145-42} className="app-logo">
-                “Logo”
-            </text>
+        <svg viewBox="0 0 900 100" className="app-logo-container">
+            <image y={"25%"} href={logoImg} width={"50%"} height={"50%"}/>
         </svg>
     )
 }
