@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ING303-ui/static/css/main.8d0c14d8.css",
-    "main.js": "/ING303-ui/static/js/main.5094a1bd.js",
+    "main.js": "/ING303-ui/static/js/main.f79ae182.js",
     "static/js/787.3317de99.chunk.js": "/ING303-ui/static/js/787.3317de99.chunk.js",
     "static/media/steik.png": "/ING303-ui/static/media/steik.a5e447a7a69baa581be5.png",
     "static/media/ytrefilet_reinsdyr.png": "/ING303-ui/static/media/ytrefilet_reinsdyr.e6e57f2dce30b3616be6.png",
@@ -14,11 +14,11 @@
     "static/media/arrow_back.svg": "/ING303-ui/static/media/arrow_back.b9c9a50bbef68720dff750bbb50c25e5.svg",
     "static/media/plus.svg": "/ING303-ui/static/media/plus.d84a5064a367a8f8a0b9a1d6421f26fe.svg",
     "main.8d0c14d8.css.map": "/ING303-ui/static/css/main.8d0c14d8.css.map",
-    "main.5094a1bd.js.map": "/ING303-ui/static/js/main.5094a1bd.js.map",
+    "main.f79ae182.js.map": "/ING303-ui/static/js/main.f79ae182.js.map",
     "787.3317de99.chunk.js.map": "/ING303-ui/static/js/787.3317de99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d0c14d8.css",
-    "static/js/main.5094a1bd.js"
+    "static/js/main.f79ae182.js"
   ]
 }
